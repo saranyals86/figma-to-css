@@ -22,5 +22,19 @@ a {
 
 .app {
   max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.app::before {
+  content: "";
+  width: 98vw;
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
   margin: auto;
+  z-index: -1;
 }

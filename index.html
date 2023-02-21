@@ -5,42 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma to HTML and CSS</title>
-    <link href="style.css" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap" rel="stylesheet">
-</head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <div class="app">
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li class="nav-link">
+            <a class="link" href="about.html">
+              <img src="images/app-logo.png" alt="logo of app" />
+            </a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">About</a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">Products</a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">Pricing</a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">Blog</a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">Jobs</a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">More</a>
+          </li>
+        </ul>
 
-<body>
-    <div class= "app">
-        <nav class="nav-bar"> 
-            <ul class="nav-bar-list">
-                <li class="nav-link">
-                    <a class="nav-link-text" href="about.html" > <img src="images/app-logo.png" alt="logo of app"/>
-                    </a> 
-                </li> 
-                <li class="nav-link"><a class="nav-link-text" href="about.html" >About</a></li>
-                <li class="nav-link"><a class="nav-link-text" href="products.html">Products</a></li>
-                <li class="nav-link"><a class="nav-link-text" href="pricing.html">Pricing</a></li>
-                <li class="nav-link"><a class="nav-link-text" href="blog.html" >Blog</a></li>
-                <li class="nav-link"><a class="nav-link-text" href="jobs.html">Jobs</a></li>
-                <li class="nav-link"><a class="nav-link-text" href="more.html">More</a></li>
-                
-                <ul class="nav-bar-list-right">
-                    <li class="nav-link">
-                        <a class="nav-link-text" href="about.html" > <img src="images/google-play-badge.png" alt="logo of google play store"/>
-                        </a> 
-                    </li> 
-                    <li class="nav-link">
-                        <a class="nav-link-text" href="about.html" > <img src="images/app-store-badge.png" alt="logo of apple store"/>
-                        </a> 
-                    </li> 
-                </ul>
-               
-            </ul>
-        </nav>
+        <ul class="nav-bar-list-right">
+          <li class="nav-link">
+            <a class="link" href="#">
+              <img
+                src="images/google-play-badge.png"
+                alt="logo of google play store"
+              />
+            </a>
+          </li>
+          <li class="nav-link">
+            <a class="link" href="#">
+              <img src="images/app-store-badge.png" alt="logo of apple store" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <div class="hero-content-wrapper">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Organize projects <br />
+              Get more done.
+            </h1>
+            <button class="hero-button">Get started</button>
+          </div>
 
+          <div class="hero-image-container">
+            <img src="images/phone.png" alt="Hero Image" />
+          </div>
+        </div>
+        <!-- prettier-ignore -->
+
+        <div class="hero-company-logos">
+          <img src="images/company-logos/airbnb-logo.png" alt="Company logos" />
+          <img src="images/company-logos/hubspot -logo.png"  alt="Company logos"  />
+          <img src="images/company-logos/google-logo.png" alt="Company logos" />
+          <img src="images/company-logos/microsoft-logo.png" alt="Company logos" />
+          <img src="images/company-logos/walmart-logo.png"   alt="Company logos" />
+          <img src="images/company-logos/fedex-logo.png" alt="Company logos" />
+        </div>
+      </section>
     </div>
   </body>
 </html>
