@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #18191f;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #18191f;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.app::before {
+  content: "";
+  width: 98vw;
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  z-index: -1;
+}
