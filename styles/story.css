@@ -1,0 +1,101 @@
+.story-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #d5fafc;
+  padding: 5% 18%;
+  font-family: "Inter";
+  color: #18191f;
+  display: grid;
+  grid-template-columns: 0.2fr 0.75fr 0.75fr 0.2fr;
+  grid-template-rows: repeat(11, 0.25fr);
+  grid-template-areas:
+    "h h . . "
+    "h h ab ab"
+    "h h ab ab"
+    ". hs ab ab"
+    ". hs ab ab"
+    ". hs ab ab"
+    ". hs ab ab"
+    ". hs bms ."
+    ". hs bms ."
+    ". hs bms ."
+    ". . bms .";
+  gap: 2%;
+}
+#title-quote {
+  position: absolute;
+  left: 12.8%;
+  top: 228%;
+}
+.story-heading {
+  grid-area: h;
+}
+#story-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+#story-about {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.story-img {
+  padding-bottom: 10%;
+}
+
+.story-hubspot {
+  grid-area: hs;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  padding: 5%;
+}
+.story-airbnb {
+  grid-area: ab;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  padding: 8%;
+}
+.story-bookmyshow {
+  grid-area: bms;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  padding: 5%;
+}
+
+.story-feedback {
+  display: flex;
+  gap: 15px;
+}
+
+.story-feedback-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.story-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+}
+.story-author-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.story-author-position {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.fb-quote {
+  max-width: 5%;
+  max-height: 10px;
+}

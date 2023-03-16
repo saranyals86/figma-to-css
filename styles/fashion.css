@@ -1,0 +1,24 @@
+.fashion-trends {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 10% 8%;
+  margin-bottom: 5%;
+}
+.fashion-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.fashion-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  padding-right: 8%;
+}
+.fashion-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 45%;
+}
