@@ -1,101 +1,122 @@
-.story-page {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #d5fafc;
-  padding: 5% 18%;
-  font-family: "Inter";
-  color: #18191f;
-  display: grid;
-  grid-template-columns: 0.2fr 0.75fr 0.75fr 0.2fr;
-  grid-template-rows: repeat(11, 0.25fr);
-  grid-template-areas:
-    "h h . . "
-    "h h ab ab"
-    "h h ab ab"
-    ". hs ab ab"
-    ". hs ab ab"
-    ". hs ab ab"
-    ". hs ab ab"
-    ". hs bms ."
-    ". hs bms ."
-    ". hs bms ."
-    ". . bms .";
-  gap: 2%;
-}
-#title-quote {
-  position: absolute;
-  left: 12.8%;
-  top: 228%;
-}
-.story-heading {
-  grid-area: h;
-}
-#story-title {
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 64px;
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 90px 0;
+  position: relative;
 }
 
-#story-about {
-  font-weight: 400;
+.testimonial-section-left,
+.testimonial-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.testimonial-section-left {
+  align-items: flex-end;
+}
+
+.testimonial-section-right {
+  align-items: flex-start;
+}
+
+.testimonial-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.header-quote-mark {
+  width: 142px;
+  height: 120px;
+  position: absolute;
+  z-index: 1;
+  left: -20%;
+  top: -35%;
+}
+
+.testimonial-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-description {
   font-size: 18px;
+  font-weight: 400;
   line-height: 32px;
 }
-.story-img {
-  padding-bottom: 10%;
-}
 
-.story-hubspot {
-  grid-area: hs;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+.testimonial-card {
+  width: 350px;
+  background: white;
   border-radius: 8px;
-  padding: 5%;
-}
-.story-airbnb {
-  grid-area: ab;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-  border-radius: 8px;
-  padding: 8%;
-}
-.story-bookmyshow {
-  grid-area: bms;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-  border-radius: 8px;
-  padding: 5%;
-}
-
-.story-feedback {
+  padding: 32px;
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.story-feedback-desc {
+.testimonial-logo {
+  width: 140px;
+}
+
+.testimonial-details {
+  display: flex;
+  gap: 16px;
+}
+
+.testimonial-details > .testimonial-quote {
+  width: 16px;
+  height: 14px;
+}
+
+.testimonial-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.story-desc {
-  font-weight: 400;
+
+.testimonial {
   font-size: 18px;
   line-height: 32px;
-  font-feature-settings: "salt" on, "liga" off;
-  color: #18191f;
+  text-align: left;
 }
-.story-author-name {
-  font-weight: 700;
+
+.authors-name {
   font-size: 18px;
+  font-weight: 700;
   line-height: 28px;
 }
-.story-author-position {
-  font-weight: 500;
+
+.authors-position {
   font-size: 14px;
+  font-weight: 500;
   line-height: 24px;
+  color: #969bab;
 }
-.fb-quote {
-  max-width: 5%;
-  max-height: 10px;
+
+.hubspot {
+  margin-bottom: 35px;
+}
+
+.airbnb {
+  width: 445px;
+  margin-top: 45px;
+}
+
+.testimonial-section::before {
+  content: "";
+  width: 98vw;
+  height: 100%;
+  position: absolute;
+  background: #d5fafc;
+  margin: auto;
+  z-index: -1;
 }
