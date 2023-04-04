@@ -1,0 +1,59 @@
+.mobile-friendly {
+  display: flex;
+  gap: 50px;
+  background: #2ec5ce;
+  padding: 0% 10%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.responsive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#responsive-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+#responsive-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.get-app {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.responsive-images {
+  display: flex;
+}
+#phone1 {
+  padding-bottom: 10%;
+}
+#phone2 {
+  padding-top: 12%;
+}
+.responsive-icons {
+  display: flex;
+  gap: 13px;
+  padding-bottom: 10%;
+}
+
+.mobile-friendly::before {
+  content: "";
+  margin: auto;
+  width: 98vw;
+  height: 100%;
+  position: absolute;
+  background: #2ec5ce;
+  z-index: -1;
+}
